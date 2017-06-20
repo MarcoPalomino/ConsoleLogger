@@ -14,10 +14,11 @@ namespace ConsoleLogger
         {
             try
             {
-                var strLog = string.Empty;
-                var creationDate = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString() ;
+                var strLog = "";
+                var creationDate = DateTime.Now.ToShortDateString() + "-" + DateTime.Now.ToShortTimeString() ;
 
                 strLog = string.Format("Time: {0} / Type: {1} / Message: {2} ", creationDate, logType, logMessage);
+                
                 Console.WriteLine(strLog);
 
                 return true;
